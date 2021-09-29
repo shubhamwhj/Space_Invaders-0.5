@@ -7,6 +7,7 @@ This is a temporary script file.
 import pygame, sys
 
 pygame.init()
+clock=pygame.time.Clock()
 
 screen = pygame.display.set_mode((400,600))
 
@@ -26,5 +27,6 @@ while True:
     pygame.draw.rect(screen,(123,200,100),enemy)
     
     pygame.display.update()
+    clock.tick(30)
    
 
